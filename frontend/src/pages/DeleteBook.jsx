@@ -2,15 +2,20 @@ import { useState} from "react"
 import BackButton from "../components/BackButton"
 import Spinner from "../components/Spinner"
 import axios from "axios"
+import { useSnackbar } from "notistack"
 import { useNavigate, useParams } from "react-router-dom"
 const DeleteBook = () => {
   const [loading,setLoading] = useState(false);
+  const { enqueueSnackbar} = useSnackbar();
+
   const { id } = useParams();
   const navigate = useNavigate(); 
   const handleDelete= ()=>{
     setLoading(true)
     axios.delete(`http://localhost:5500/books/${id}`).then(()=>{
       setLoading(false)
+      enqueueSnackbar("Data deleted", { variant: "error" ,preventDuplicate: true,autoHideDuration: 2000});
+
       navigate('/')
     }).catch((error)=>{
       setLoading(false)

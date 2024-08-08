@@ -13,13 +13,21 @@
 - For backend:
 ```
 cd backend
+```
+```
 npm install
+```
+```
 npm run dev
 ```
 - For frontend:
 ``` 
 cd frontend
+```
+```
 npm install
+```
+```
 npm run dev
 ```
 - The project starts at port 5173.

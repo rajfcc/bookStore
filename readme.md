@@ -11,23 +11,23 @@
 - Download or clone this repository.
 - Run the following commands:
 - For backend:
-```
+```cmd
 cd backend
 ```
-```
+```node
 npm install
 ```
-```
+```node
 npm run dev
 ```
 - For frontend:
-``` 
+``` cmd
 cd frontend
 ```
-```
+```node
 npm install
 ```
-```
+```node
 npm run dev
 ```
 - The project starts at port 5173.

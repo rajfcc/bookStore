@@ -1,4 +1,4 @@
-# This is a practice project
+# This is a practice Book-Store project
 ---
 ## MERN stack is used to complete this project
 
